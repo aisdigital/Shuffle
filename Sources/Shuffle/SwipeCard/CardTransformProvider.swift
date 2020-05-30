@@ -54,7 +54,8 @@ class CardTransformProvider: CardTransformProvidable {
 
   func rotationDirectionY(for card: SwipeCard) -> CGFloat {
     if let touchPoint = card.touchLocation {
-      return (touchPoint.y < card.bounds.height / 2) ? 1 : -1
+//      return (touchPoint.y < card.bounds.height / 2) ? 1 : -1
+        return 1
     }
     return 0
   }
